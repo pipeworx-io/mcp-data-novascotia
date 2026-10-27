@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-data-novascotia",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Nova Scotia Open Data (data.novascotia.ca) Socrata MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-ae7911fad4ca0531b7c6d3a33a42f32dc99cbfb2ef3f7b53eadaadb7fc1a9cdb",
-    "sourceCommit": "01241619b78233fd55d0e3612331499a63f03ae7"
+    "sourceHash": "v1-444b73fdf02f4650363ca93f94820e32df9c51cf49e37637ce2696852c9cc420",
+    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
   }
 }
