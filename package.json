@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-data-novascotia",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Nova Scotia Open Data (data.novascotia.ca) Socrata MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-data-novascotia": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "data-novascotia"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-data-novascotia.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/data-novascotia",
   "pipeworx": {
-    "sourceHash": "v1-444b73fdf02f4650363ca93f94820e32df9c51cf49e37637ce2696852c9cc420",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "data-novascotia",
+    "gatewaySlug": "data-novascotia",
+    "sourceHash": "v1-1fbb1bea4b29f6b86fd9787745478adc67c8d253d827d605712bcd494de5b2fb",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
